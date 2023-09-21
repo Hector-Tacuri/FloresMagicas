@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+    --dark-color: #000;
+  }
+  
+  body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--dark-color);
+    overflow: hidden;
+    perspective: 1000px;
+  }
+  
+  .night {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    filter: blur(0.1vmin);
+    background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+  }
+body {
+    background-image: url('Stich.jpg');
+    background-size: 50%; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+}
+
+.contenedor{
+
+    margin: auto; 
+    width: 900px;
+    margin-top: 300px; 
+    text-align: center;
+
+}
+
+.titulo{
+
+    margin-bottom: 20px;
+
+}
+
+.opciones p{
+
+    background: rgb(59, 200, 210);
+    padding: 12px;
+    display: initial; 
+    color: #ffffff; 
+    border-radius: 2px; 
+    font-weight: bold;
+
+}
+
+p.p1{
+
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    width: 100px;
+
+}
+
+p.p1:hover{
+
+    background: gray; 
+    cursor: pointer;
+
+}
+
+p.p2{
+
+    position: absolute; 
+    top: 400px;
+    left: 750px;
+    width: 100px;
+
+}
+
+p.p2:hover{
+
+background: gray;
+cursor: pointer;
+
+}
+
+#si{ 
+background: #515050;
+position: absolute; 
+top: 122px;
+left: 420px; 
+width: 550px; 
+color: #ffffff; 
+padding: 50px; 
+display: none;
+
+}
