@@ -1,0 +1,48 @@
+/* Estilos para el cuerpo de la página */
+body {
+    background-image: url('Hori.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor del mensaje */
+.mensaje {
+    background-color: rgba(255, 255, 255, 0.8); /* Cambia el fondo blanco a un fondo blanco semi-transparente */
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+    max-width: 500px; /* Limita el ancho del mensaje */
+}
+
+/* Estilos para el título del mensaje */
+.mensaje h1 {
+    font-size: 28px;
+    font-family: "Georgia", serif;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenido del mensaje */
+.mensaje p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: "Times New Roman", serif;
+}
+
+/* Efecto al pasar el ratón sobre el mensaje */
+.mensaje:hover {
+    transform: scale(1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

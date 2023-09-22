@@ -106,3 +106,22 @@ padding: 50px;
 display: none;
 
 }
+
+.btn-siguiente {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Espacio entre el mensaje y el botón */
+  border: 2px solid #ff69b4; /* Agregamos un borde */
+  font-family: Arial, sans-serif; /* Estilo de fuente */
+}
+
+.btn-siguiente:hover {
+  background-color: #ff007f;
+  border-color: #ff007f; /* Cambio de color del borde al pasar el ratón */
+}
